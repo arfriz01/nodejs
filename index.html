@@ -19,6 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+				<a class="navbar-brand" href="#">ARFs Blog</a>
                 <a class="navbar-brand" href="https://arfriz01.github.io">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,18 +40,23 @@
           <div class="blog-post">
             <h2 class="blog-post-title">NodeJS</h2>
             <p class="blog-post-meta">February 24, 2015 by <a href="https://www.google.com/search?newwindow=1&site=&source=hp&q=alicia+rae+frizzell&oq=alicia+rae+frizzell&gs_l=hp.3..33i21.1434.4802.0.5112.20.20.0.0.0.0.216.1805.13j4j1.18.0.msedr...0...1c.1.61.hp..7.13.1251.0.QRwwb08tu6U">Alicia R. Frizzell</a></p>
-            <p>This blog post discusses node.js</p>
+            <p>Welcome back! Today we will be discussing Nodejs. If you would like to add to anything I put up here, feel free. I enjoyed the feedback I received from my last post. Please keep it up!</p>
             <hr>
             <p></p>
             <blockquote>
               <p></p>
             
-            <h2>Heading</h2>
+            <h2>Introduction</h2>
             <p></p>
             <h3>Sub-heading</h3>
             <p></p>
-            <pre><code>Example code block</code></pre>
-            <p>Code</p>
+            <pre style="background:#424242;"><code style="color:white;">var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');</code></pre>
+            <p>This simple web server written in Node responds with "Hello World" for every request.</p>
             <h3>Sub-heading</h3>
             <p></p>
             <ul>
@@ -62,31 +68,13 @@
               <li></li>
             </ol>
             <p></p>
+			<hr>
+			<h2>Whats?</h2>
+			<hr>
+			<h2>What?</h2>
           </div><!-- /.blog-post -->
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-            <p></p>
-            <blockquote>
-              <p>.</p>
-            </blockquote>
-            <p></p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-            <p></p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <p></p>
-          </div><!-- /.blog-post -->
+ 
 
           <nav>
             <ul class="pager">
@@ -94,7 +82,6 @@
               <li><a href="#">Next</a></li>
             </ul>
           </nav>
-
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -129,9 +116,35 @@
 
       </div><!-- /.row -->
 
-    </div><!-- /.container -->
+	  <div class="well">
+                    <h4>Leave a Comment:</h4>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
 
-   
-	
+                <hr>
+
+                <!-- Posted Comments -->
+
+                <!-- Comment -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="SampleUser.jpg" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Wow...
+                            <small>February 11, 2015 at 3:28 AM</small>
+                        </h4>
+						<h6>-Anonymous</h6>
+                        I love nodejs now. Wow. It really is amazing. Keep up the good work!
+						
+                    </div>
+                </div>
+				<hr>
+    </div><!-- /.container -->
 	</body>
 </html>
