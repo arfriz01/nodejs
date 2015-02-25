@@ -57,12 +57,23 @@
             <p>Well, there are a few things I'd like to point out about node:</p>
 			<ul>
               <li>It is great for real-time applications</li>
-			  <li>Non blocking I/O model</li>
+			  <li>Non blocking I/O model (Asynchronous)</li>
 			  <li>It has a built-in library</li>
 			  <li>Uses Google V8 JavaScript engine</li>
             </ul>
-
+<hr>
+			<h2>Let's take a closer look!</h2>
+			<hr>
+			<p>Node is great for scalable applications because many connections can be handled concurrently. </p>
+			<p>Node uses non blocking I/O which is a form of input/output processing that permits other processing to continue before transmission is completed. This is great because 
+			code does not have to execute in sequence. Here is a great example from Stack Overflow:<p>
 			<br>
+			<img src="StackO.JPG">
+			<br>
+			<p>In the asynchronous example, 2 would appear to output second, but it does not.</p>
+			
+			<hr>
+			<h2>Take a look at some example node code</h2>
 			<br>
             <pre style="background:#424242;"><code style="color:white;">var http = require('http');
 http.createServer(function (req, res) {
@@ -80,10 +91,7 @@ console.log('Server running at http://127.0.0.1:1337/');</code></pre>
               <li></li>
             </ol>
             <p></p>
-			<hr>
-			<h2>Whats?</h2>
-			<hr>
-			<h2>What?</h2>
+			
           </div><!-- /.blog-post -->
 
  
